@@ -208,7 +208,7 @@ class SongRenderer:
             last_vol = vol
             last_pan = pan
 
-            pos = tempo_segments[note.tick]
+            pos = tempo_segments[note.tick] + random.randint(-5, 5)
 
             mixer.overlay(sound, position=pos)
 
